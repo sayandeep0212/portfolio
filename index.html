@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio | Coder's Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* small inline styles for feedback */
+        
+        .form-status {
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .form-status.success {
+            color: #00ff88;
+        }
+        
+        .form-status.error {
+            color: #ff0088;
+        }
+        
+        button[disabled] {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Deep<span>Portfolio</span></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Sayandeep Pradhan</span></h1>
+                <p>I'm a passionate <span class="typed-text"></span> with a love for creating digital experiences that matter.</p>
+                <a href="#profile" class="btn">Know Me Better</a>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- Profile -->
+    <section class="profile" id="profile">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Profile</h2>
+            </div>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <div class="image-container">
+                        <img src="sayandeep.jpeg" alt="Sayandeep Pradhan">
+                        <div class="image-overlay">
+                            <div class="social-links-profile">
+                                <a href="https://github.com/sayandeep0212" class="social-link-profile"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/sayandeep-pradhan-2a0405286/" class="social-link-profile"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/sayandeep0212/" class="social-link-profile"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h3>Sayandeep Pradhan</h3>
+                    <p class="profile-title">Frontend Developer & Cyber Security Analyst</p>
+                    <p>Student at Adamas University in B.Tech CSE, passionate about web development and cybersecurity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Code. Create. Innovate.</h3>
+                    <p>I'm a student of Adamas University and I am the Frontend Web Developer and Cyber Security Analyser also Ethical Hacker. My passion lies in protecting people from Cyber Threads & Cyber Crimes and creating scalable, user friendly websites.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                    <div class="skills">
+                        <div class="skill">Html</div>
+                        <div class="skill">Css</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">C</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-box">
+                        <div class="code-header">
+                            <div class="code-dot red"></div>
+                            <div class="code-dot yellow"></div>
+                            <div class="code-dot green"></div>
+                        </div>
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-function">developer</span> = {</div>
+                        <div class="code-line">&nbsp;&nbsp;name: <span class="code-string">"Sayandeep"</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;skills: [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"HTML"</span>],</div>
+                        <div class="code-line">&nbsp;&nbsp;passion: <span class="code-string">"Creating digital experiences"</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;getProject: <span class="code-keyword">function</span>() {</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"Amazing web applications"</span>;</div>
+                        <div class="code-line">&nbsp;&nbsp;}</div>
+                        <div class="code-line">};<span class="code-cursor"></span></div>
+                        <div class="code-line"><span class="code-comment">// Always learning, always coding</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Emojipingpong.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="https://sayandeep0212.github.io/Emoji-Ping-Pong-Game/" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Emoji Ping Pong Game</h3>
+                        <p>A Emoji based Ping Pong game like instagram Message react emoji game for kids.</p>
+                        <div class="project-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="cringecoders.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="https://sayandeep0212.github.io/postermaking/" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quality Education Webpage</h3>
+                        <p>A Webpage Based on Quality Education For Cringe Code Team. This Webpage was made for Poster Making Competition in Adamas University.</p>
+                        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="admindashboard.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Governmental Admin Dashboard</h3>
+                        <p>An Admin dashboard for managing the crowdsourced civic issues.</p>
+                        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sayandeep0212@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 6296286113</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Chandipur, West Bengal, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input id="name" type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="subject" type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button id="submitBtn" type="submit" class="btn">Send Message</button>
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/sayandeep0212" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sayandeep-pradhan-2a0405286/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/sayandeep0212/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Pradhansayandeep" class="social-link"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 DeepPortfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- particles library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Supabase client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Main script -->
+    <script>
+        // Supabase Configuration - REPLACE WITH YOUR ACTUAL CREDENTIALS
+        const SUPABASE_URL = 'https://wwvogmkhoircsnfqlgwr.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3dm9nbWtob2lyY3NuZnFsZ3dyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwMzI2NTcsImV4cCI6MjA3NDYwODY1N30.OVdV2oi6d_F8NVRXd2AuYTN5zEmPFylOwEC2ymvsmgY';
+
+        // Initialize Supabase client
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        // Helper functions
+        const safeQuery = (sel, root = document) => {
+            try {
+                return root.querySelector(sel);
+            } catch {
+                return null;
+            }
+        };
+
+        const isValidEmail = (email) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).toLowerCase());
+        };
+
+        const setStatus = (msg, type = 'info') => {
+            const statusEl = safeQuery('#formStatus');
+            if (!statusEl) return;
+
+            statusEl.textContent = msg;
+            statusEl.className = `form-status ${type}`;
+        };
+
+        // Mobile Menu Toggle
+        const menuToggle = safeQuery('#menu-toggle');
+        const navLinks = safeQuery('.nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = safeQuery('header');
+            if (header) {
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            }
+        });
+
+        // Typing Effect
+        const typedTextSpan = safeQuery('.typed-text');
+        const textArray = ['Frontend Developer', 'UI/UX Enthusiast', 'Problem Solver', 'Tech Innovator'];
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (!typedTextSpan) return;
+
+            const currentText = textArray[textArrayIndex];
+            if (charIndex < currentText.length) {
+                typedTextSpan.textContent += currentText.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 2000);
+            }
+        }
+
+        function erase() {
+            if (!typedTextSpan) return;
+
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                textArrayIndex = (textArrayIndex + 1) % textArray.length;
+                setTimeout(type, 500);
+            }
+        }
+
+        // Initialize typing effect
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typedTextSpan) {
+                setTimeout(type, 1000);
+            }
+        });
+
+        // Particles.js Configuration
+        if (typeof particlesJS !== 'undefined') {
+            try {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: {
+                            value: 80,
+                            density: {
+                                enable: true,
+                                value_area: 800
+                            }
+                        },
+                        color: {
+                            value: '#00ff88'
+                        },
+                        shape: {
+                            type: 'circle'
+                        },
+                        opacity: {
+                            value: 0.5,
+                            random: true
+                        },
+                        size: {
+                            value: 3,
+                            random: true
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#00ff88',
+                            opacity: 0.2,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: true,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false
+                        }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: {
+                                enable: true,
+                                mode: 'repulse'
+                            },
+                            onclick: {
+                                enable: true,
+                                mode: 'push'
+                            },
+                            resize: true
+                        }
+                    },
+                    retina_detect: true
+                });
+            } catch (err) {
+                console.warn('Particles.js initialization failed:', err);
+            }
+        }
+
+        // Contact Form Handling with Supabase
+        const contactForm = safeQuery('#contactForm');
+        const submitBtn = safeQuery('#submitBtn');
+
+        if (contactForm && submitBtn) {
+            contactForm.addEventListener('submit', async(e) => {
+                e.preventDefault();
+
+                // Get form values
+                const name = safeQuery('#name').value.trim();
+                const email = safeQuery('#email').value.trim();
+                const subject = safeQuery('#subject').value.trim();
+                const message = safeQuery('#message').value.trim();
+
+                // Validation
+                if (!name || !email || !message) {
+                    setStatus('Please fill in all required fields.', 'error');
+                    return;
+                }
+
+                if (!isValidEmail(email)) {
+                    setStatus('Please enter a valid email address.', 'error');
+                    return;
+                }
+
+                // Disable submit button and show loading state
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                setStatus('Sending your message...', 'info');
+
+                try {
+                    // Insert data into Supabase
+                    const {
+                        data,
+                        error
+                    } = await supabase
+                        .from('contacts')
+                        .insert([{
+                            name: name,
+                            email: email,
+                            subject: subject,
+                            message: message,
+                            created_at: new Date().toISOString()
+                        }]);
+
+                    if (error) {
+                        console.error('Supabase error:', error);
+                        setStatus('Failed to send message. Please try again.', 'error');
+                    } else {
+                        setStatus('Thank you! Your message has been sent successfully.', 'success');
+                        contactForm.reset();
+                    }
+                } catch (err) {
+                    console.error('Unexpected error:', err);
+                    setStatus('An unexpected error occurred. Please try again.', 'error');
+                } finally {
+                    // Re-enable submit button
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }
+            });
+        } else {
+            console.warn('Contact form or submit button not found');
+        }
+    </script>
+</body>
+
+</html>
